@@ -1,8 +1,8 @@
-@extends('templatenilai')
-@section('title', 'Data Nilai Siswa')
+@extends('template')
+@section('title', 'Data Nilai Kuliah')
 @section('konten')
 
-    <h2>Data Nilai Siswa</h2>
+    <h2>Data Nilai Kuliah</h2>
 
     @if (session('success'))
         <p style="color: green;">{{ session('success') }}</p>

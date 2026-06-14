@@ -11,12 +11,12 @@ class NilaiController extends Controller
     public function index()
     {
         $nilai = DB::table('nilaikuliah')->orderBy('ID')->get();
-        return view('indexnilai', compact('nilai'));
+        return view('nilai.index', compact('nilai'));
     }
 
     public function create()
     {
-        return view('tambahnilai');
+        return view('nilai.create');
     }
 
     public function store(Request $request)
