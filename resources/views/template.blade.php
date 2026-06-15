@@ -36,7 +36,7 @@
                         <a class="nav-link" href="/tas">Tugas Pra EAS: TAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EAS</a>
+                        <a class="nav-link" href="/eas">eas</a>
                     </li>
 
                 </ul>

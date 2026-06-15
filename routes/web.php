@@ -100,3 +100,12 @@ Route::delete('/tas/{KodeTas}', [TasController::class, 'hapus'])->name('tas.hapu
 Route::get('/tastambah', [TasController::class, 'tambah'])->name('tas.tambah');
 Route::get('/tasedit/{KodeTas}', [TasController::class, 'edit'])->name('tas.edit');
 Route::get('/tascari', [TasController::class, 'cari'])->name('tas.cari');
+
+//EAS
+use App\Http\Controllers\MypegawaiController;
+//route CRUD mypegawai
+Route::get('/eas', [MypegawaiController::class, 'index'])->name('mypegawai.index');
+Route::post('/eas', [MypegawaiController::class, 'store'])->name('mypegawai.store');
+Route::put('/eas/{kodepegawai}', [MypegawaiController::class, 'update'])->name('mypegawai.update');
+Route::get('/eastambah', [MypegawaiController::class, 'tambah'])->name('mypegawai.tambah');
+Route::get('/easview/{kodepegawai}', [MypegawaiController::class, 'view'])->name('mypegawai.view');
